@@ -13,8 +13,7 @@ const Hero = () => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 
   const fadeClass = (delay = 0) =>
-    `transition-all duration-700 ease-out ${
-      visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+    `transition-all duration-700 ease-out ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
     }`;
 
   return (
@@ -126,9 +125,8 @@ const Hero = () => {
 
           {/* Right — Photo */}
           <div
-            className={`flex justify-center lg:justify-end order-1 lg:order-2 transition-all duration-900 ease-out ${
-              visible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
-            }`}
+            className={`flex justify-center lg:justify-end order-1 lg:order-2 transition-all duration-900 ease-out ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
+              }`}
             style={{ transitionDelay: '200ms' }}
           >
             <div className="relative">
@@ -138,7 +136,7 @@ const Hero = () => {
               <div className="absolute -inset-0.5 rounded-[2rem] bg-gradient-to-br from-taupe/60 to-warm-brown/30 opacity-60" />
 
               <img
-                src="/assets/Ashish.jpeg"
+                src="/assets/ashish-pic.png"
                 alt="Ashish Ravidas"
                 className="relative w-64 h-80 sm:w-72 sm:h-96 lg:w-80 lg:h-[420px] object-cover rounded-[1.9rem] shadow-warm-xl"
               />
@@ -160,9 +158,8 @@ const Hero = () => {
 
         {/* Scroll indicator */}
         <div
-          className={`absolute bottom-8 left-1/2 -translate-x-1/2 transition-all duration-700 ${
-            visible ? 'opacity-100' : 'opacity-0'
-          }`}
+          className={`absolute bottom-8 left-1/2 -translate-x-1/2 transition-all duration-700 ${visible ? 'opacity-100' : 'opacity-0'
+            }`}
           style={{ transitionDelay: '900ms' }}
         >
           <button
